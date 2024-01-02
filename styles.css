@@ -3,42 +3,48 @@ body {
   }
   
   #text {
-    background-color: tan;
+    background-color: lightgray;
     color: black;
-    padding: 10px;
+    padding: .5em;
+    border-radius: 8px;
   }
   
   #game {
-    max-width: 500px;
-    max-height: 400px;
+    max-width: 80%;
+    max-height: 20%;
     background-color: #ffffff;
     color: #ffffff;
-    margin: 30px auto 0px;
-    padding: 10px;
+    margin: 2em auto 0em;
+    padding: .75em;
+    border: 1px solid black;
+    border-radius: 8px;
   }
   
   #controls,
   #stats {
-    border: 1px solid black;
-    padding: 5px;
-    color: black
+    border-radius: 8px;
+    padding: .5em;
+    color: black;
   }
-  
-  #monsterStats {
-    display: none;
-    border: 1px solid black;
-    padding: 5px;
-    color: #ffffff;
-    background-color: #c70d0d;
+
+  #controls {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #stats {
+    display: flex;
+    justify-content: right;
   }
   
   .stat {
-    padding-right: 10px;
+    padding-right: 1em;
   }
   
   button {
     cursor: pointer;
     color: black;
+    width: 25%;
     background-color: yellow;
     background-image: linear-gradient(lightyellow, yellow);
     border: 1px solid black;
