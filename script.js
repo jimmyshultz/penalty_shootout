@@ -183,9 +183,9 @@ function checkForScore(diveDirection, kickDirection) {
 
 function checkForSave(kickDirection, diveDirection) {
     if (kickDirection == diveDirection) {
-        text.innerText = `Save! You shot ${kickDirection} and the keeper stopped the shot.`;
+        text.innerText = `Save! The taker shot ${kickDirection} but you stopped the shot.`;
     } else {
-        text.innerText = `Score! You shot ${kickDirection} but the keeper dove ${diveDirection}.`;
+        text.innerText = `Score! The taker shot ${kickDirection} and you dove ${diveDirection}.`;
         team2Score += 1;
         team2Text.innerText = team2Score;
     }
